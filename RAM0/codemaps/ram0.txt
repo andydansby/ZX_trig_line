@@ -1,0 +1,11 @@
+Object  file ram0.o at $0000: Z80RMF12
+  Name: RAM0
+  Section bss_compiler: 0 bytes
+  Section IGNORE: 0 bytes
+  Section code_crt_init: 0 bytes
+  Section code_compiler: 0 bytes
+  Section BANK_00: 50 bytes
+  Symbols:
+    G A $0000 _Variable_in_RAM0 (section BANK_00) (file ram0Z.asm:29)
+    G A $0009 _gfx_xy (section BANK_00) (file ram0Z.asm:36)
+    G A $000B _rtunes_pixel (section BANK_00) (file ram0Z.asm:40)
