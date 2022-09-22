@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<results version="2">
+    <cppcheck version="2.7" />
+    <errors>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;float&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;float&apos;." cwe="686" file0="../UNCONTENDED/uncontended.c">
+            <location file="..\UNCONTENDED\uncontended.h" line="464" column="13" />
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &apos;temp3&apos; is reassigned a value before the old one has been used." verbose="Variable &apos;temp3&apos; is reassigned a value before the old one has been used." cwe="563" file0="../UNCONTENDED/uncontended.c">
+            <location file="..\UNCONTENDED\functions.h" line="11" column="11" info="temp3 is overwritten" />
+            <location file="..\UNCONTENDED\functions.h" line="10" column="11" info="temp3 is assigned" />
+            <symbol>temp3</symbol>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &apos;temp3&apos; is reassigned a value before the old one has been used." verbose="Variable &apos;temp3&apos; is reassigned a value before the old one has been used." cwe="563" file0="../UNCONTENDED/uncontended.c">
+            <location file="..\UNCONTENDED\functions.h" line="12" column="11" info="temp3 is overwritten" />
+            <location file="..\UNCONTENDED\functions.h" line="11" column="11" info="temp3 is assigned" />
+            <symbol>temp3</symbol>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &apos;temp3&apos; is reassigned a value before the old one has been used." verbose="Variable &apos;temp3&apos; is reassigned a value before the old one has been used." cwe="563" file0="../UNCONTENDED/uncontended.c">
+            <location file="..\UNCONTENDED\functions.h" line="13" column="11" info="temp3 is overwritten" />
+            <location file="..\UNCONTENDED\functions.h" line="12" column="11" info="temp3 is assigned" />
+            <symbol>temp3</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;x1&apos; can be reduced." verbose="The scope of the variable &apos;x1&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="../UNCONTENDED/uncontended.c">
+            <location file="..\UNCONTENDED\uncontended.h" line="375" column="9" />
+            <symbol>x1</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;y1&apos; can be reduced." verbose="The scope of the variable &apos;y1&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="../UNCONTENDED/uncontended.c">
+            <location file="..\UNCONTENDED\uncontended.h" line="375" column="13" />
+            <symbol>y1</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;x2&apos; can be reduced." verbose="The scope of the variable &apos;x2&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="../UNCONTENDED/uncontended.c">
+            <location file="..\UNCONTENDED\uncontended.h" line="399" column="9" />
+            <symbol>x2</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;y2&apos; can be reduced." verbose="The scope of the variable &apos;y2&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="../UNCONTENDED/uncontended.c">
+            <location file="..\UNCONTENDED\uncontended.h" line="399" column="13" />
+            <symbol>y2</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;endX&apos; can be reduced." verbose="The scope of the variable &apos;endX&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="../UNCONTENDED/uncontended.c">
+            <location file="..\UNCONTENDED\uncontended.h" line="428" column="14" />
+            <symbol>endX</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;endY&apos; can be reduced." verbose="The scope of the variable &apos;endY&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="../UNCONTENDED/uncontended.c">
+            <location file="..\UNCONTENDED\uncontended.h" line="428" column="20" />
+            <symbol>endY</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;yy&apos; shadows outer variable" verbose="Local variable &apos;yy&apos; shadows outer variable" cwe="398" file0="../UNCONTENDED/uncontended.c">
+            <location file="..\UNCONTENDED\uncontended.h" line="212" column="11" info="Shadow variable" />
+            <location file="..\UNCONTENDED\variables.h" line="26" column="15" info="Shadowed declaration" />
+            <symbol>yy</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;yy&apos; shadows outer variable" verbose="Local variable &apos;yy&apos; shadows outer variable" cwe="398" file0="../UNCONTENDED/uncontended.c">
+            <location file="..\UNCONTENDED\uncontended.h" line="228" column="11" info="Shadow variable" />
+            <location file="..\UNCONTENDED\variables.h" line="26" column="15" info="Shadowed declaration" />
+            <symbol>yy</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;yy&apos; shadows outer variable" verbose="Local variable &apos;yy&apos; shadows outer variable" cwe="398" file0="../UNCONTENDED/uncontended.c">
+            <location file="..\UNCONTENDED\uncontended.h" line="283" column="11" info="Shadow variable" />
+            <location file="..\UNCONTENDED\variables.h" line="26" column="15" info="Shadowed declaration" />
+            <symbol>yy</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;x1&apos; shadows outer variable" verbose="Local variable &apos;x1&apos; shadows outer variable" cwe="398" file0="../UNCONTENDED/uncontended.c">
+            <location file="..\UNCONTENDED\uncontended.h" line="375" column="9" info="Shadow variable" />
+            <location file="..\UNCONTENDED\variables.h" line="38" column="15" info="Shadowed declaration" />
+            <symbol>x1</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;y1&apos; shadows outer variable" verbose="Local variable &apos;y1&apos; shadows outer variable" cwe="398" file0="../UNCONTENDED/uncontended.c">
+            <location file="..\UNCONTENDED\uncontended.h" line="375" column="13" info="Shadow variable" />
+            <location file="..\UNCONTENDED\variables.h" line="38" column="19" info="Shadowed declaration" />
+            <symbol>y1</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;length&apos; shadows outer variable" verbose="Local variable &apos;length&apos; shadows outer variable" cwe="398" file0="../UNCONTENDED/uncontended.c">
+            <location file="..\UNCONTENDED\uncontended.h" line="376" column="9" info="Shadow variable" />
+            <location file="..\UNCONTENDED\variables.h" line="47" column="15" info="Shadowed declaration" />
+            <symbol>length</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;x1&apos; shadows outer variable" verbose="Local variable &apos;x1&apos; shadows outer variable" cwe="398" file0="../UNCONTENDED/uncontended.c">
+            <location file="..\UNCONTENDED\uncontended.h" line="398" column="9" info="Shadow variable" />
+            <location file="..\UNCONTENDED\variables.h" line="38" column="15" info="Shadowed declaration" />
+            <symbol>x1</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;y1&apos; shadows outer variable" verbose="Local variable &apos;y1&apos; shadows outer variable" cwe="398" file0="../UNCONTENDED/uncontended.c">
+            <location file="..\UNCONTENDED\uncontended.h" line="398" column="13" info="Shadow variable" />
+            <location file="..\UNCONTENDED\variables.h" line="38" column="19" info="Shadowed declaration" />
+            <symbol>y1</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;x2&apos; shadows outer variable" verbose="Local variable &apos;x2&apos; shadows outer variable" cwe="398" file0="../UNCONTENDED/uncontended.c">
+            <location file="..\UNCONTENDED\uncontended.h" line="399" column="9" info="Shadow variable" />
+            <location file="..\UNCONTENDED\variables.h" line="38" column="23" info="Shadowed declaration" />
+            <symbol>x2</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;y2&apos; shadows outer variable" verbose="Local variable &apos;y2&apos; shadows outer variable" cwe="398" file0="../UNCONTENDED/uncontended.c">
+            <location file="..\UNCONTENDED\uncontended.h" line="399" column="13" info="Shadow variable" />
+            <location file="..\UNCONTENDED\variables.h" line="38" column="27" info="Shadowed declaration" />
+            <symbol>y2</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;length&apos; shadows outer variable" verbose="Local variable &apos;length&apos; shadows outer variable" cwe="398" file0="../UNCONTENDED/uncontended.c">
+            <location file="..\UNCONTENDED\uncontended.h" line="400" column="9" info="Shadow variable" />
+            <location file="..\UNCONTENDED\variables.h" line="47" column="15" info="Shadowed declaration" />
+            <symbol>length</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;dy&apos; shadows outer variable" verbose="Local variable &apos;dy&apos; shadows outer variable" cwe="398" file0="../UNCONTENDED/uncontended.c">
+            <location file="..\UNCONTENDED\uncontended.h" line="487" column="9" info="Shadow variable" />
+            <location file="..\UNCONTENDED\variables.h" line="28" column="15" info="Shadowed declaration" />
+            <symbol>dy</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;dx&apos; shadows outer variable" verbose="Local variable &apos;dx&apos; shadows outer variable" cwe="398" file0="../UNCONTENDED/uncontended.c">
+            <location file="..\UNCONTENDED\uncontended.h" line="488" column="9" info="Shadow variable" />
+            <location file="..\UNCONTENDED\variables.h" line="27" column="15" info="Shadowed declaration" />
+            <symbol>dx</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;x2&apos; shadows outer variable" verbose="Local variable &apos;x2&apos; shadows outer variable" cwe="398" file0="../UNCONTENDED/uncontended.c">
+            <location file="..\UNCONTENDED\uncontended.h" line="495" column="9" info="Shadow variable" />
+            <location file="..\UNCONTENDED\variables.h" line="38" column="23" info="Shadowed declaration" />
+            <symbol>x2</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;y2&apos; shadows outer variable" verbose="Local variable &apos;y2&apos; shadows outer variable" cwe="398" file0="../UNCONTENDED/uncontended.c">
+            <location file="..\UNCONTENDED\uncontended.h" line="496" column="9" info="Shadow variable" />
+            <location file="..\UNCONTENDED\variables.h" line="38" column="27" info="Shadowed declaration" />
+            <symbol>y2</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;dy&apos; shadows outer variable" verbose="Local variable &apos;dy&apos; shadows outer variable" cwe="398" file0="../UNCONTENDED/uncontended.c">
+            <location file="..\UNCONTENDED\uncontended.h" line="677" column="9" info="Shadow variable" />
+            <location file="..\UNCONTENDED\variables.h" line="28" column="15" info="Shadowed declaration" />
+            <symbol>dy</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;dx&apos; shadows outer variable" verbose="Local variable &apos;dx&apos; shadows outer variable" cwe="398" file0="../UNCONTENDED/uncontended.c">
+            <location file="..\UNCONTENDED\uncontended.h" line="678" column="9" info="Shadow variable" />
+            <location file="..\UNCONTENDED\variables.h" line="27" column="15" info="Shadowed declaration" />
+            <symbol>dx</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;P&apos; is assigned a value that is never used." verbose="Variable &apos;P&apos; is assigned a value that is never used." cwe="563" file0="../UNCONTENDED/uncontended.c">
+            <location file="..\UNCONTENDED\uncontended.h" line="279" column="19" />
+            <symbol>P</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;SIN_COS_line&apos; is never used." verbose="The function &apos;SIN_COS_line&apos; is never used." cwe="561">
+            <location file="..\UNCONTENDED\uncontended.h" line="426" column="0" />
+            <symbol>SIN_COS_line</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;_cos_Smile&apos; is never used." verbose="The function &apos;_cos_Smile&apos; is never used." cwe="561">
+            <location file="..\UNCONTENDED\uncontended.h" line="201" column="0" />
+            <symbol>_cos_Smile</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;_coss&apos; is never used." verbose="The function &apos;_coss&apos; is never used." cwe="561">
+            <location file="..\UNCONTENDED\uncontended.h" line="290" column="0" />
+            <symbol>_coss</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;_mikeCOS&apos; is never used." verbose="The function &apos;_mikeCOS&apos; is never used." cwe="561">
+            <location file="..\UNCONTENDED\uncontended.h" line="70" column="0" />
+            <symbol>_mikeCOS</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;bresenham_angle&apos; is never used." verbose="The function &apos;bresenham_angle&apos; is never used." cwe="561">
+            <location file="..\UNCONTENDED\uncontended.h" line="485" column="0" />
+            <symbol>bresenham_angle</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;bresenham_line&apos; is never used." verbose="The function &apos;bresenham_line&apos; is never used." cwe="561">
+            <location file="..\UNCONTENDED\uncontended.h" line="675" column="0" />
+            <symbol>bresenham_line</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;call_Fill_Attr&apos; is never used." verbose="The function &apos;call_Fill_Attr&apos; is never used." cwe="561">
+            <location file="..\UNCONTENDED\functions.h" line="7" column="0" />
+            <symbol>call_Fill_Attr</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;cosine&apos; is never used." verbose="The function &apos;cosine&apos; is never used." cwe="561">
+            <location file="..\UNCONTENDED\uncontended.h" line="224" column="0" />
+            <symbol>cosine</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;cosine2&apos; is never used." verbose="The function &apos;cosine2&apos; is never used." cwe="561">
+            <location file="..\UNCONTENDED\uncontended.h" line="244" column="0" />
+            <symbol>cosine2</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;draw_circle&apos; is never used." verbose="The function &apos;draw_circle&apos; is never used." cwe="561">
+            <location file="..\UNCONTENDED\uncontended.h" line="373" column="0" />
+            <symbol>draw_circle</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;draw_line&apos; is never used." verbose="The function &apos;draw_line&apos; is never used." cwe="561">
+            <location file="..\UNCONTENDED\uncontended.h" line="396" column="0" />
+            <symbol>draw_line</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;naked_contendedRam&apos; is never used." verbose="The function &apos;naked_contendedRam&apos; is never used." cwe="561">
+            <location file="..\CONTENDED\contended.c" line="16" column="0" />
+            <symbol>naked_contendedRam</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;naked_placement_in_RAM0&apos; is never used." verbose="The function &apos;naked_placement_in_RAM0&apos; is never used." cwe="561">
+            <location file="..\RAM0\ram0.c" line="22" column="0" />
+            <symbol>naked_placement_in_RAM0</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;plot&apos; is never used." verbose="The function &apos;plot&apos; is never used." cwe="561">
+            <location file="..\UNCONTENDED\uncontended.h" line="368" column="0" />
+            <symbol>plot</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;rtunes_pixelRoutine&apos; is never used." verbose="The function &apos;rtunes_pixelRoutine&apos; is never used." cwe="561">
+            <location file="..\UNCONTENDED\uncontended.h" line="341" column="0" />
+            <symbol>rtunes_pixelRoutine</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;use_random_number_generator&apos; is never used." verbose="The function &apos;use_random_number_generator&apos; is never used." cwe="561">
+            <location file="..\UNCONTENDED\functions.h" line="23" column="0" />
+            <symbol>use_random_number_generator</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;wrap&apos; is never used." verbose="The function &apos;wrap&apos; is never used." cwe="561">
+            <location file="..\UNCONTENDED\uncontended.h" line="37" column="0" />
+            <symbol>wrap</symbol>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Cppcheck cannot find all the include files (use --check-config for details)" verbose="Cppcheck cannot find all the include files. Cppcheck can check the code without the include files found. But the results will probably be more accurate if all the include files are found. Please check your project&apos;s include directories and add all of them as include directories for Cppcheck. To see what files Cppcheck cannot find use --check-config." />
+    </errors>
+</results>
